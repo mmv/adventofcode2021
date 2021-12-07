@@ -7,6 +7,7 @@ let solvers =  [|
     Day04.solve1;   Day04.solve2
     Day05.solve1;   Day05.solve2
     Day06.solve1;   Day06.solve2
+    Day07.solve1;   Day07.solve2
 |]
 
 printfn "%s" ((Array.last solvers)())
