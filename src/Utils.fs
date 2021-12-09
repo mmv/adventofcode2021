@@ -25,3 +25,8 @@ let tap f xs = seq {
         f x
         yield x
 }
+
+let changer d u ox =
+    ox |> Option.defaultValue d
+    |> u
+    |> Some

@@ -8,6 +8,12 @@ let solvers =  [|
     Day05.solve1;   Day05.solve2
     Day06.solve1;   Day06.solve2
     Day07.solve1;   Day07.solve2
+    Day08.solve1;   Day08.solve2
+    Day09.solve1;   Day09.solve2
 |]
 
+let sw = System.Diagnostics.Stopwatch()
+sw.Start()
 printfn "%s" ((Array.last solvers)())
+sw.Stop()
+printfn "took %d" sw.ElapsedMilliseconds
